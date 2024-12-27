@@ -1,0 +1,254 @@
+/*** intro css ***/
+.intro {
+    padding: 100px 10px 100px;
+    height: 850px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro .logo {
+    height: 70px;
+}
+
+.intro span{
+    display: initial;
+}
+
+.intro .intro-content {
+    position: relative;
+    z-index: 999;
+    width: 40%;
+}
+
+.intro-img {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    right: 0px;
+}
+
+
+
+.intro-img-02 {
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    right: 0px;
+    left: 0;
+}
+
+
+.header.intro-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0;
+    z-index: 99;
+}
+
+.header.intro-header .navbar-light {
+    background-color: transparent;
+}
+
+.header.intro-header.is-sticky  .navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.scroll_down{
+    position: relative;
+    z-index: 9999;
+}
+
+.scroll_down a {
+    position: relative;
+    height: 60px;
+    width: 38px;
+    line-height: 80px;
+    border-radius: 30px;
+    border: 2px solid #ef3139;
+    display: inline-block;
+    text-align: center;
+}
+.scroll_down i {
+    position: relative;
+    -webkit-animation: bounce 4s infinite;
+    animation: bounce 4s infinite;
+    color: #ef3139;
+    font-size: 20px;
+}
+
+
+
+.demo a:hover {
+  opacity: .5;
+}
+
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.portfolio .thumb {
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 30px rgba(73, 85, 99, .2);
+    transition: all .3s cubic-bezier(.65, .05, .36, 1);
+}
+
+.portfolio .pv-port-info
+a {
+    color: #1f1f1f;
+    font-size: 18px;
+    line-height: 1.39;
+}
+
+.portfolio .pv-port-info a:hover {
+    color: #ef3139;
+}
+
+.portfolio:hover .thumb {
+    transform: translateY(-10px);
+}
+
+
+@media (min-width:1470px) {
+
+    .intro .container, .header .container {
+            max-width: 1470px;
+    }
+}
+
+
+@media (max-width:1500px) {
+
+.intro {
+    overflow: hidden;
+    position: relative;
+}
+
+.intro-img  {
+    right: -20%;
+ }
+
+}
+
+@media (max-width:1400px) {
+    .intro .intro-content {
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width:1366px) {
+.intro-img  {
+    right: -40%;
+ }
+ }
+
+@media (max-width:1199px) {
+    .category-grid-style-01 .category-item{
+        width: 20%;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(6n+0) {
+        border-right: 1px solid #eeeeee;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(5n+0) {
+        border-right: none;
+    }
+
+    .intro-img  {
+    right: -50%;
+ }
+}
+
+
+
+@media (max-width:991px) {
+    .intro {
+        height: 100%;
+        padding: 100px 0;
+    }
+
+   .intro h1 {
+    font-size: 44px;
+    line-height: 54px;
+    }
+
+    .intro-img{
+        display: none;
+    }
+
+
+    .category-grid-style-01 .category-item{
+        width: 25%;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(5n+0) {
+        border-right: 1px solid #eeeeee;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(4n+0) {
+        border-right: none;
+    }
+
+.intro .logo {
+    height: 40px;
+}
+
+.intro .intro-content {
+    width: 100%;
+}
+
+
+}
+
+@media (max-width:767px) {
+
+    .intro h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .category-grid-style-01 .category-item{
+        width: 33.3333%;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(4n+0) {
+        border-right: 1px solid #eeeeee;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(3n+0) {
+        border-right: none;
+    }
+
+
+}
+
+@media (max-width:575px) {
+
+
+    .category-grid-style-01 .category-item{
+        width: 100%;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(2n+0) {
+        border-right: 1px solid #eeeeee;
+    }
+
+    .category-grid-style-01 .category-item:nth-child(1n+0) {
+        border-right: none;
+    }
+    .intro {
+        height: 100%;
+        padding: 60px 0;
+    }
+
+}
